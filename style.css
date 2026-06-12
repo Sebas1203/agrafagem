@@ -1,0 +1,202 @@
+/* 1. GENERAL BASE STYLES */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif; /* Modern, clean typography */
+    background: #f4f6f9;
+}
+
+h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 90%;
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1; /* Soft grey border instead of solid black */
+    border-radius: 10px;
+    margin-top: 10px;
+    box-sizing: border-box; /* Prevents input overflow caused by padding */
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3b82f6; /* Highlights in blue on click for better UX */
+}
+
+/* 2. MAIN LAYOUT STRUCTURE
+*/
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Fixed left sidebar */
+.sidebar {
+    width: 330px;
+    background: white;
+    padding: 30px;
+    border-right: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Dynamic content area (where the table lives) */
+.content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto; /* Independent scroll if the table grows too large */
+}
+
+/* Sidebar logo */
+.sidebar img {
+    mix-blend-mode: darken;
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-self: center; /* Centers the logo perfectly in the sidebar */
+}
+
+/* ==========================================================================
+   3. COMPONENT: RECORDS TABLE
+   ========================================================================== */
+table {
+    max-width: 95%;
+    margin: 30px auto;
+    background: #ffffff;
+    width: 100%;
+    border-collapse: separate; /* Allows rounded table corners */
+    border-spacing: 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Subtle shadow */
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+/* Correct selector order — applies cleanly to the header row */
+thead tr {
+    background: #f1f5f9;
+}
+
+th, td {
+    border-bottom: 1px solid #e2e8f0; /* Soft dividing lines */
+    border-right: 1px solid #e2e8f0;
+    padding: 14px;
+    text-align: center;
+}
+
+/* Removes overflow borders on last column/row to preserve rounded corners */
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+th {
+    background: #f1f5f9;
+    color: #475569;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+td {
+    color: #334155;
+    font-size: 14px;
+}
+
+/* Hover effect: highlights the row under the cursor */
+table tbody tr:hover {
+    background-color: #f8fafc;
+    transition: background-color 0.15s ease;
+}
+
+/* ==========================================================================
+   4. BUTTONS AND ACTIONS
+   ========================================================================== */
+button {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 25px;
+    margin-top: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease; /* Smooth transition for hover states */
+}
+
+/* Visual feedback on cursor hover */
+button:hover {
+    filter: brightness(0.9);
+    transform: translateY(-1px); /* Subtle lift effect */
+}
+
+button:active {
+    transform: translateY(0px);
+}
+
+/* Button color variants */
+.green {
+    background: #41AB2C;
+    color: white;
+    border: none;
+}
+
+.red {
+    background: #F72700;
+    color: white;
+    border: none;
+}
+
+/* Admin button (pinned to the bottom) */
+.admin-btn {
+    background: #34495e;
+    color: white;
+    border: none;
+    border-radius: 25px;
+}
+
+/* Pushes the button to the bottom of the sidebar */
+.bottom-btn {
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   5. MODAL WINDOWS (POP-UPS)
+   ========================================================================== */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Green button exclusively for use inside modals */
+.btn-verde {
+    margin-bottom: 16px;
+    background: #41AB2C;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-verde:hover {
+    background: #2d8a1e;
+}
