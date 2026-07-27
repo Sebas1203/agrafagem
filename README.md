@@ -28,14 +28,17 @@ Agrafagem is a full-stack web application deployed on a local network to track e
 ### Tech Stack
 - **Backend:** Node.js, Express.js
 - **Database:** PostgreSQL
-- **Frontend:** Vanilla JavaScript, HTML, CSS
+- **Frontend:** React, Vite
 - **Process Manager:** PM2
 
 ### Installation
 1. Clone the repository
-2. Install dependencies: `npm install`
-3. Create a `.env` file based on `.env.example`
-4. Run the server: `pm2 start backend/server.js --name agrafagem`
+2. Install backend dependencies: `npm install`
+3. Build the frontend: `npm run build` (installs frontend deps and builds `frontend/dist`)
+4. Create a `.env` file based on `.env.example`
+5. Run the server: `pm2 start backend/server.js --name agrafagem`
+
+For frontend development with hot reload, run `npm run dev` inside `frontend/` (proxies API calls to the backend on port 3000).
 
 ---
 
@@ -54,11 +57,14 @@ O Agrafagem é uma aplicação web full-stack implantada numa rede local para re
 ### Tecnologias
 - **Backend:** Node.js, Express.js
 - **Base de dados:** PostgreSQL
-- **Frontend:** JavaScript, HTML, CSS
+- **Frontend:** React, Vite
 - **Gestor de processos:** PM2
 
 ### Instalação
 1. Clonar o repositório
-2. Instalar dependências: `npm install`
-3. Criar ficheiro `.env` baseado no `.env.example`
-4. Iniciar o servidor: `pm2 start backend/server.js --name agrafagem`
+2. Instalar dependências do backend: `npm install`
+3. Compilar o frontend: `npm run build` (instala as dependências do frontend e gera `frontend/dist`)
+4. Criar ficheiro `.env` baseado no `.env.example`
+5. Iniciar o servidor: `pm2 start backend/server.js --name agrafagem`
+
+Para desenvolvimento do frontend com hot reload, execute `npm run dev` dentro de `frontend/` (as chamadas à API são redirecionadas para o backend na porta 3000).

@@ -3,21 +3,19 @@ const { Pool } = require("pg");
 const cors = require("cors");
 const path = require("path");
 
+require("dotenv").config({ path: path.join(__dirname, "../.env") });
+
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "..")));
-
-app.get("/", (req, res) => {
-    res.redirect("/lear/index.html");
-});
+app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
 const pool = new Pool({
-    user: "postgres",
-    host: "localhost",
-    database: "produccion",
-    password: "Sl1000307432**",
-    port: 5432,
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    database: process.env.DB_NAME,
+    password: process.env.DB_PASSWORD,
+    port: process.env.DB_PORT ,
 });
 
 // Records

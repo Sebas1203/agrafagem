@@ -1,0 +1,44 @@
+{
+  "brand": "AGRAFAGEM",
+  "sidebar": {
+    "cardPlaceholder": "Passar cartão",
+    "labelPlaceholder": "Ler etiqueta",
+    "line": "Linha {{numero}}",
+    "enter": "ENTRADA",
+    "exit": "SAIDA",
+    "manageEmployees": "Gestão de colaboradores"
+  },
+  "modal": {
+    "title": "Gestão de Colaboradores",
+    "cardNumberPlaceholder": "Nº Cartão",
+    "namePlaceholder": "Nome",
+    "cardCodePlaceholder": "Codigo Cartão",
+    "roleSelectPlaceholder": "-- seleção de função --",
+    "roleOperator": "OPERADOR",
+    "add": "Adicionar",
+    "close": "Fechar",
+    "table": {
+      "id": "ID",
+      "cardNumber": "Nº Cartão",
+      "cardCode": "Codigo Cartão",
+      "name": "Nome",
+      "role": "Rol",
+      "remove": "Remover"
+    }
+  },
+  "records": {
+    "title": "Registros de Agrafagem",
+    "date": "Data",
+    "entryTime": "Hora entrada",
+    "exitTime": "Hora saída",
+    "label": "N etiqueta",
+    "cardNumber": "N Cartão",
+    "table": "Mesa",
+    "type": "Tipo"
+  },
+  "alerts": {
+    "cardNotFound": "Cartão não encontrado",
+    "scanCardAndLabel": "Por favor, passe o cartão e a etiqueta",
+    "fillAllFields": "Por favor, preencha todos os campos"
+  }
+}

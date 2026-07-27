@@ -1,0 +1,44 @@
+{
+  "brand": "AGRAFAGEM",
+  "sidebar": {
+    "cardPlaceholder": "Scan card",
+    "labelPlaceholder": "Scan label",
+    "line": "Line {{numero}}",
+    "enter": "ENTER",
+    "exit": "EXIT",
+    "manageEmployees": "Manage employees"
+  },
+  "modal": {
+    "title": "Employee Management",
+    "cardNumberPlaceholder": "Card No.",
+    "namePlaceholder": "Name",
+    "cardCodePlaceholder": "Card Code",
+    "roleSelectPlaceholder": "-- select role --",
+    "roleOperator": "OPERATOR",
+    "add": "Add",
+    "close": "Close",
+    "table": {
+      "id": "ID",
+      "cardNumber": "Card No.",
+      "cardCode": "Card Code",
+      "name": "Name",
+      "role": "Role",
+      "remove": "Remove"
+    }
+  },
+  "records": {
+    "title": "Stapling Records",
+    "date": "Date",
+    "entryTime": "Entry time",
+    "exitTime": "Exit time",
+    "label": "Label No.",
+    "cardNumber": "Card No.",
+    "table": "Desk",
+    "type": "Type"
+  },
+  "alerts": {
+    "cardNotFound": "Card not found",
+    "scanCardAndLabel": "Please scan card and label",
+    "fillAllFields": "Please fill in all fields"
+  }
+}

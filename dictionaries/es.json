@@ -1,0 +1,44 @@
+{
+  "brand": "AGRAFAGEM",
+  "sidebar": {
+    "cardPlaceholder": "Pasar tarjeta",
+    "labelPlaceholder": "Leer etiqueta",
+    "line": "Línea {{numero}}",
+    "enter": "ENTRAR",
+    "exit": "SALIR",
+    "manageEmployees": "Gestión de colaboradores"
+  },
+  "modal": {
+    "title": "Gestión de Colaboradores",
+    "cardNumberPlaceholder": "Nº Tarjeta",
+    "namePlaceholder": "Nombre",
+    "cardCodePlaceholder": "Código Tarjeta",
+    "roleSelectPlaceholder": "-- selección de función --",
+    "roleOperator": "OPERADOR",
+    "add": "Agregar",
+    "close": "Cerrar",
+    "table": {
+      "id": "ID",
+      "cardNumber": "Nº Tarjeta",
+      "cardCode": "Código Tarjeta",
+      "name": "Nombre",
+      "role": "Rol",
+      "remove": "Eliminar"
+    }
+  },
+  "records": {
+    "title": "Registros de Grapado",
+    "date": "Fecha",
+    "entryTime": "Hora entrada",
+    "exitTime": "Hora salida",
+    "label": "Nº etiqueta",
+    "cardNumber": "Nº Tarjeta",
+    "table": "Mesa",
+    "type": "Tipo"
+  },
+  "alerts": {
+    "cardNotFound": "Tarjeta no encontrada",
+    "scanCardAndLabel": "Por favor, pase la tarjeta y la etiqueta",
+    "fillAllFields": "Por favor, complete todos los campos"
+  }
+}
